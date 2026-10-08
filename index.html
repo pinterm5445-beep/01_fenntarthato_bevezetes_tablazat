@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Fenntarthatóság</title>
 </head>
+
 <body>
     <main>
+        <nav>
+            <div class="jelveny2">
+                Zöld Döntések
+            </div>
+            <a href="#a">Ugrás a táblázathoz</a>
+        </nav>
+
+        <header>
+            <p class="t">Fenntarthatóbb iskola · HTML_táblázat minta</p>
+            <h1>
+                Egy dönté<br>
+                Többféle hatás.
+            </h1>
+            <p>A fenntartható fejlődésről akkor tudunk jól gondolkozni, ha egy döntés<br> környezeti, társadalmi és
+                gazdasági oldalát együtt vizsgáljuk</p>
+        </header>
+
+        <section>
+            <div class="teglak">
+                <h3>Környezet</h3>
+                <p>Anyagok, energia, víz és az élővilág</p>
+            </div>
+
+            <div class="teglak">
+                <h3>Társadalom</h3>
+                <p>Kik férnek hozzá, és kinek változik a mindennapja?</p>
+            </div>
+
+            <div class="teglak">
+                <h3>Gazdaság</h3>
+                <p>Mihez kell pénz, munka vagy fenntartás?</p>
+            </div>
+        </section>
+
         <article>
             <div class="fejlec-doboz">
                 <div class="fejlec-szoveg">
@@ -15,10 +51,9 @@
                     <p class="alcim">Négy példa arra, hogyan kapcsolódnak össze a hatások.</p>
                 </div>
                 <div class="jelveny">4 döntés · 3 szempont</div>
-                <div class="tisztazas"></div>
             </div>
 
-            <div class="tablazat-keret">
+            <div class="tablazat-keret" id="a">
                 <table>
                     <caption>Iskolai döntések és lehetséges hatásaik</caption>
                     <thead>
@@ -39,7 +74,8 @@
                             <td>Kevesebb egyszer használatos palackra lehet szükség.</td>
                             <td>Az ivóvíz könnyebben elérhető a diákoknak.</td>
                             <td>Az ivóvízpont kialakítása és fenntartása pénzbe kerül.</td>
-                            <td class="kiemelt-cella">Ha sokan tudnak vizet tölteni, kevesebb palackot vásárolhatnak. Ehhez működő, karbantartott ivóvízpont kell.</td>
+                            <td class="kiemelt-cella">Ha sokan tudnak vizet tölteni, kevesebb palackot vásárolhatnak.
+                                Ehhez működő, karbantartott ivóvízpont kell.</td>
                         </tr>
                         <tr>
                             <td class="dontes-cella">
@@ -49,7 +85,8 @@
                             <td>Nem lesz olyan durva hőség az udvaron, jobb lesz a levegő.</td>
                             <td>Végre nem kell a tűző napon aszalódni szünetben.</td>
                             <td>A fákat meg kell venni, és az öntözésük is pénzbe kerül.</td>
-                            <td class="kiemelt-cella">Ha ültetünk fákat, az élhetőbbé teszi a sulit, de előbb ki kell fizetni a beszerzésüket.</td>
+                            <td class="kiemelt-cella">Ha ültetünk fákat, az élhetőbbé teszi a sulit, de előbb ki kell
+                                fizetni a beszerzésüket.</td>
                         </tr>
                         <tr>
                             <td class="dontes-cella">
@@ -59,7 +96,8 @@
                             <td>Kevesebb autós fuvar, kisebb a szmog a suli körül.</td>
                             <td>A diákok szívesebben tekernek, ha nem kell a biciklik ellopásától félniük.</td>
                             <td>A tároló és a kamerák kiépítése egyszeri nagyobb beruházást igényel.</td>
-                            <td class="kiemelt-cella">Egy jó tárolóval több diák választja a biciklit, így tisztább lesz a levegő, de a tárolót előre meg kell építeni.</td>
+                            <td class="kiemelt-cella">Egy jó tárolóval több diák választja a biciklit, így tisztább lesz
+                                a levegő, de a tárolót előre meg kell építeni.</td>
                         </tr>
                         <tr>
                             <td class="dontes-cella">
@@ -68,23 +106,25 @@
                             </td>
                             <td>Kevesebb veszélyes elektronikai hulladék keletkezik.</td>
                             <td>Ösztönzi a felelős, fenntartható szemléletet a gépek használatánál.</td>
-                            <td>A javítás és az alkatrészek olcsóbbak, mint egy teljesen új gépcsat gépeinek cseréje.</td>
-                            <td class="kiemelt-cella">A gépek javítása pénzt spórol az iskolának és óvja a környezetet, még ha plusz szervizmunkát is igényel.</td>
+                            <td>A javítás és az alkatrészek olcsóbbak, mint egy teljesen új gépcsat gépeinek cseréje.
+                            </td>
+                            <td class="kiemelt-cella">A gépek javítása pénzt spórol az iskolának és óvja a környezetet,
+                                még ha plusz szervizmunkát is igényel.</td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="5">Keskeny képernyőn a táblázat vízszintesen görgethető. A sorok lehetséges hatásokat mutatnak, nem számszerű bizonyítókokat.</td>
+                            <td colspan="5">Keskeny képernyőn a táblázat vízszintesen görgethető. A sorok lehetséges
+                                hatásokat mutatnak, nem számszerű bizonyítókokat.</td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
         </article>
-        
+
         <footer>
             <p class="lablec-bal">Oktatási minta a 10. évfolyam HTML-táblázatos feladatához.</p>
             <p class="lablec-jobb">Kiinduló olvasmány: <a href="#">Zöld Föld, 9–10. évfolyam, 11–12. oldal.</a></p>
-            <div class="tisztazas"></div>
         </footer>
     </main>
 </body>

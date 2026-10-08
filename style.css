@@ -15,8 +15,45 @@ body {
 
 main {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1b382b;
+    background-color: #f7f9f6;
+    padding: 20px;
+}
+
+header {
+    clear: both;
+    background-color: #1b4d3e;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.t {
+    color: greenyellow;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5px;
+}
+
+nav a {
+    text-align: right;
+    color: #2e5a36;
+    font-weight: bold;
+    font-size: 0.95rem;
 }
 
 .fejlec-doboz {
@@ -24,7 +61,7 @@ main {
 }
 
 .fejlec-szoveg {
-    float: left;
+    text-align: left;
 }
 
 h2 {
@@ -40,7 +77,6 @@ h2 {
 }
 
 .jelveny {
-    float: right;
     background-color: #e2ebd8;
     color: #3d6837;
     font-size: 12px;
@@ -50,8 +86,41 @@ h2 {
     letter-spacing: 0.3px;
 }
 
-.tisztazas {
-    clear: both;
+.jelveny2 {
+    display: inline-block;
+    background-color: #e2ebd8;
+    color: #2e5a36;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 25px 0 40px 0;
+}
+
+section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #1b382b;
+}
+
+section p {
+    font-size: 0.9rem;
+    color: #557063;
+    line-height: 1.4;
+}
+
+.teglak {
+    background-color: #ffffff;
+    border: 1px solid #e0e8e2;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 .tablazat-keret {
@@ -141,10 +210,17 @@ footer {
 }
 
 .lablec-jobb {
-    float: right;
+    text-align: right;
 }
 
 footer a {
     color: #3d6837;
     text-decoration: underline;
+}
+
+@media screen and (max-width:600px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
